@@ -1,0 +1,10 @@
+
+
+
+
+cd C:\NetBeanProjects\jarTest\
+
+java -jar MeineTischreservierungen.jar Liste
+
+pause
+

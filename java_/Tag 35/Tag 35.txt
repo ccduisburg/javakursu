@@ -1,0 +1,11 @@
+java.util.funktion;okuyacagiz.
+stringbuilder bak
+
+
+String objekt degistiremeyiz.
+local variable initialisiert werden müssen.
+
+es ging eigentlich darum.
+
+
+http://www.java2s.com/Tutorials/Java/OCA_Mock_Exam_Questions/index.htm

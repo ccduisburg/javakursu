@@ -1,0 +1,15 @@
+git init 
+git config --global user.name "murraydo"
+git config --global user.email vatandas@web.de
+
+git remote add origin https://github.com/murraydo/allgemeines.git
+
+git remote -v => anzeige der hinzugefügten remotes (Github) 
+git status => anzeige der vreänderungen auf deinem Rechner
+
+$ git clone https://github.com/murraydo/allgemeines.git
+
+
+https://try.github.io/levels/1/challenges/1
+http://www.uni-weimar.de/~lopa1693/bachelor/sose2013/git.pdf
+https://git-scm.com/book/de/v1/Los-geht%E2%80%99s-Git-konfigurieren

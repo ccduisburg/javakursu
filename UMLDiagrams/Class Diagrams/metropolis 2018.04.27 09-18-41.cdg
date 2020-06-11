@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="metropolis">
+  <ClassDiagramComponents>
+    <Class name="MetropolisAirport" package="metropolis" visibility="public" xPosition="186.0" yPosition="51.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="givePermissionToLand" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Flieger" name="f"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Flieger" package="metropolis" visibility="public" xPosition="102.0" yPosition="405.0">
+      <Methods>
+        <Method name="starten" returnType="void" visibility="package"/>
+        <Method name="fliegen" returnType="void" visibility="package"/>
+        <Method name="landen" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Schwimmer" package="metropolis" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Taucher" package="metropolis" visibility="public" xPosition="633.0" yPosition="386.0">
+      <Methods>
+        <Method name="tauchen" returnType="void" visibility="package"/>
+        <Method name="wieTiefBinIch" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="metropolis.MetropolisAirport" target="metropolis.Flieger" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="metropolis.Taucher" target="metropolis.Schwimmer"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AufdemBild/AufdemBild.iml" filepath="$PROJECT_DIR$/AufdemBild/AufdemBild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Babies/Babies.iml" filepath="$PROJECT_DIR$/Babies/Babies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CCTLD/CCTLD.iml" filepath="$PROJECT_DIR$/CCTLD/CCTLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ESA/ESA.iml" filepath="$PROJECT_DIR$/ESA/ESA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExceptionBeispiele/ExceptionBeispiele.iml" filepath="$PROJECT_DIR$/ExceptionBeispiele/ExceptionBeispiele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fehler/Fehler.iml" filepath="$PROJECT_DIR$/Fehler/Fehler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KArtenspiel/KArtenspiel.iml" filepath="$PROJECT_DIR$/KArtenspiel/KArtenspiel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lamdas/Lamdas.iml" filepath="$PROJECT_DIR$/Lamdas/Lamdas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeinSpiel/MeinSpiel.iml" filepath="$PROJECT_DIR$/MeinSpiel/MeinSpiel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Memberschip/Memberschip.iml" filepath="$PROJECT_DIR$/Memberschip/Memberschip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Poly/Poly.iml" filepath="$PROJECT_DIR$/Poly/Poly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rechnen/Rechnen.iml" filepath="$PROJECT_DIR$/Rechnen/Rechnen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shop/Shop.iml" filepath="$PROJECT_DIR$/Shop/Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextBearbeitung/TextBearbeitung.iml" filepath="$PROJECT_DIR$/TextBearbeitung/TextBearbeitung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextKullanimi/TextKullanimi.iml" filepath="$PROJECT_DIR$/TextKullanimi/TextKullanimi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zugrif/Zugrif.iml" filepath="$PROJECT_DIR$/Zugrif/Zugrif.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dibohne/dibohne.iml" filepath="$PROJECT_DIR$/dibohne/dibohne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam aq160/exam aq160.iml" filepath="$PROJECT_DIR$/exam aq160/exam aq160.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fensterchen/fensterchen.iml" filepath="$PROJECT_DIR$/fensterchen/fensterchen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_projekt.iml" filepath="$PROJECT_DIR$/java_projekt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samlungen/samlungen.iml" filepath="$PROJECT_DIR$/samlungen/samlungen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schluempfe/schluempfe.iml" filepath="$PROJECT_DIR$/schluempfe/schluempfe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sinavicin/sinavicin.iml" filepath="$PROJECT_DIR$/sinavicin/sinavicin.iml" />
+    </modules>
+  </component>
+</project>

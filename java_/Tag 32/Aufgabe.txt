@@ -1,0 +1,15 @@
+Tischreservierung:
+	1.) TischDaoListImpl: Tischerstellung in TischMaker auslagern 
+	
+	2.) Tischkonsturktor anpassen, so dass Tische von Beginn an eine Bewertung zwischen 0 und 5 haben
+	
+	3.) TischMaker: Tische mit zufälliger Größe und Bewertung erstellen
+	
+	4.) Auswahlklasse: statische Methoden zur Suche nach geeigneten Tischen erstellen
+	
+	5.) Buchungsservice anpassen, so dass Listen von Tischen mit gegebener Personenzahl und gegebener Qualität
+		angezeigt werden
+		
+	6.) Mindestens eine GUI Klasse zum Testen des Buchungsservice anpassen
+	
+	7.) (optional) Tische um einen Restaurant-Typ erweitern und Listenauswahl anpassen

@@ -1,0 +1,11 @@
+30.05.2018
+JAVA
+Wrapper-Klassen
+Autoboxing/Autounboxing
+
+UML Tools (Omlet)
+singelton design pattern.
+
+Design pattern
+-
+ich habe specialle objeckte bildet.

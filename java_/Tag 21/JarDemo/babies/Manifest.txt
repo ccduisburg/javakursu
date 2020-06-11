@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: cemil
+Class-Path: MeinBabies.jar
+Main-Class: Babies.Main
+

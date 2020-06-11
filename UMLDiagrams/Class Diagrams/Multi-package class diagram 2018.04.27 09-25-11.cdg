@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="Nebel" package="de.metropilis.wetter" visibility="public" isAbstract="true" xPosition="435.0" yPosition="291.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Regenwolke" package="de.metropilis.wetter" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+        <Method name="dasIstDieGefahr" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Wolke" package="de.metropilis.wetter" visibility="public" isAbstract="true" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="hoehe" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="setHoehe" returnType="void" visibility="public">
+          <Argument type="int" name="hoehe"/>
+        </Method>
+        <Method name="dasIstDieGefahr" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Ente" package="de.metropolis.lebewesen" visibility="public" xPosition="1179.0" yPosition="39.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="KryptonidException" package="de.metropolis.lebewesen" visibility="public" xPosition="938.0" yPosition="39.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Superman" package="de.metropolis.lebewesen" visibility="public" xPosition="1596.0" yPosition="20.0">
+      <Fields>
+        <Field name="identitaet" type="String" visibility="private"/>
+        <Field name="weltRettungen" type="int" visibility="private"/>
+        <Field name="superman" type="Superman" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="rufeSuperman" returnType="Superman" visibility="public" isStatic="true"/>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vogel" package="de.metropolis.lebewesen" visibility="public" xPosition="659.0" yPosition="609.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Flugmaschine" package="de.metropolis.maschinen" visibility="public" xPosition="20.0" yPosition="641.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Flugzeug" package="de.metropolis.maschinen" visibility="public" xPosition="44.0" yPosition="339.0">
+      <Fields>
+        <Field name="gewicht" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Hubschrauber" package="de.metropolis.maschinen" visibility="public" xPosition="338.0" yPosition="498.0">
+      <Fields>
+        <Field name="anzahlSeitzplaetze" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Schiff" package="de.metropolis.maschinen" visibility="public" xPosition="1596.0" yPosition="675.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Uboot" package="de.metropolis.maschinen" visibility="public" xPosition="1900.0" yPosition="567.0">
+      <Fields>
+        <Field name="tiefe" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="tauchen" returnType="void" visibility="public"/>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+        <Method name="wieTiefBinIch" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MetropolisAirport" package="metropolis" visibility="public" xPosition="1123.0" yPosition="657.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="givePermissionToLand" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Flieger" name="f"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Flieger" package="metropolis" visibility="public" xPosition="1179.0" yPosition="368.0">
+      <Methods>
+        <Method name="starten" returnType="void" visibility="package"/>
+        <Method name="fliegen" returnType="void" visibility="package"/>
+        <Method name="landen" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="Schwimmer" package="metropolis" visibility="public" xPosition="1596.0" yPosition="391.0">
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Taucher" package="metropolis" visibility="public" xPosition="1873.0" yPosition="181.0">
+      <Methods>
+        <Method name="tauchen" returnType="void" visibility="package"/>
+        <Method name="wieTiefBinIch" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.maschinen.Hubschrauber" target="metropolis.Flieger"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.maschinen.Schiff" target="metropolis.Schwimmer"/>
+    <IsRelation name="is" source="metropolis.Taucher" target="metropolis.Schwimmer"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.maschinen.Flugzeug" target="metropolis.Flieger"/>
+    <IsRelation name="is" source="de.metropolis.maschinen.Hubschrauber" target="de.metropolis.maschinen.Flugmaschine"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropilis.wetter.Wolke" target="metropolis.Flieger"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.lebewesen.Vogel" target="metropolis.Flieger"/>
+    <IsRelation name="is" source="de.metropolis.maschinen.Flugzeug" target="de.metropolis.maschinen.Flugmaschine"/>
+    <HasRelation name="superman" source="de.metropolis.lebewesen.Superman" target="de.metropolis.lebewesen.Superman" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="metropolis.MetropolisAirport" target="metropolis.Flieger" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="de.metropolis.lebewesen.Superman" target="de.metropolis.lebewesen.Superman" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.lebewesen.Ente" target="metropolis.Schwimmer"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.lebewesen.Ente" target="metropolis.Flieger"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.maschinen.Uboot" target="metropolis.Taucher"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="de.metropolis.lebewesen.Superman" target="metropolis.Flieger"/>
+    <IsRelation name="is" source="de.metropilis.wetter.Regenwolke" target="de.metropilis.wetter.Wolke"/>
+    <IsRelation name="is" source="de.metropilis.wetter.Nebel" target="de.metropilis.wetter.Wolke"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

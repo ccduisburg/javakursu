@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java_">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java_/Shop.zip!/" />
+      <root url="jar://$PROJECT_DIR$/java_/MarcosKartenspiel0.zip!/" />
+      <root url="jar://$PROJECT_DIR$/java_/MarcosKartenspiel.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

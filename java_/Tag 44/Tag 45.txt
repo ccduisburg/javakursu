@@ -1,0 +1,20 @@
+override methodlarda
+1-reckgabe type degistirilemez.
+2- throw yapamayiz
+3- herzaman public olmasi gerekir
+
+//
+
+----IS-A-------- baglantilari------------------------
+interface KannBewegtWerden{}
+interface KAnnFliegen extends KannBewegtWerden{}//KannFliegen IS-A Bewegtwerden
+
+
+class Base{}
+class Derived extends Base{}//Derived IS-A Base
+Extends schlüsselwort bise her zaman "is-a" baglantisini gösterir.
+
+class X implements Runnable{//X IS-A Runnable
+public void run(){}
+}
+----IS-A-------- baglantilari end------------------------

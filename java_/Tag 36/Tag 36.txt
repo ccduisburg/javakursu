@@ -1,0 +1,24 @@
+16.05.2018
+Java 
+Tag 36
+
+swich case de sadece de enum,String, wrapper 
+
+switch case de eger break yoksa bütün case condition calisir. 
+primitiv variable switch case de ancak final yaziyoursa basinda olabilir.
+konstant olmak zorunda
+
+sadece ikisi kabul ediliyor
+
+  String [] buses=new String[] {"lion"};
+  
+  String [] tiger =new String[4]; 
+
+  Bu kabul edilmiyor
+String [] buses=new String[4] {"lion"};
+----------------------------------
+float [] loin =new float[1];// dogru
+
+float [] h =new[1] float;// yanlis
+
+

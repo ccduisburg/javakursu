@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="de.metropolis.maschinen">
+  <ClassDiagramComponents>
+    <Class name="Flugmaschine" package="de.metropolis.maschinen" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Flugzeug" package="de.metropolis.maschinen" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="gewicht" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Hubschrauber" package="de.metropolis.maschinen" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="anzahlSeitzplaetze" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Schiff" package="de.metropolis.maschinen" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Uboot" package="de.metropolis.maschinen" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="tiefe" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="tauchen" returnType="void" visibility="public"/>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+        <Method name="wieTiefBinIch" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="de.metropolis.maschinen.Flugzeug" target="de.metropolis.maschinen.Flugmaschine"/>
+    <IsRelation name="is" source="de.metropolis.maschinen.Hubschrauber" target="de.metropolis.maschinen.Flugmaschine"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

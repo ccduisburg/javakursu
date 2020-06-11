@@ -1,0 +1,12 @@
+Java
+18.05.2018
+
+abgesehen:ayri
+protected daten capsulung. 
+
+overloaded method icin,
+ must have same name.
+ dont have to same return type.
+ must different list of parameter. 
+bestandteile:
+

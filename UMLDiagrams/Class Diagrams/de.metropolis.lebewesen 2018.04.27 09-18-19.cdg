@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="de.metropolis.lebewesen">
+  <ClassDiagramComponents>
+    <Class name="Ente" package="de.metropolis.lebewesen" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="ablegen" returnType="void" visibility="public"/>
+        <Method name="schwimmen" returnType="void" visibility="public"/>
+        <Method name="anlegen" returnType="void" visibility="public"/>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="KryptonidException" package="de.metropolis.lebewesen" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Superman" package="de.metropolis.lebewesen" visibility="public" xPosition="454.0" yPosition="238.0">
+      <Fields>
+        <Field name="identitaet" type="String" visibility="private"/>
+        <Field name="weltRettungen" type="int" visibility="private"/>
+        <Field name="superman" type="Superman" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="rufeSuperman" returnType="Superman" visibility="public" isStatic="true"/>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vogel" package="de.metropolis.lebewesen" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="superman" source="de.metropolis.lebewesen.Superman" target="de.metropolis.lebewesen.Superman" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="de.metropolis.lebewesen.Superman" target="de.metropolis.lebewesen.Superman" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

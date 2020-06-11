@@ -1,0 +1,2 @@
+Bu gün EntittyFreamwork üzerine örnek yaptik.
+database islemlerini ve bazi kodlari kendisi olusturuyor.Java EE ile ilgili bir konuymus

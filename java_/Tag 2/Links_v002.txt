@@ -1,0 +1,11 @@
+https://www.java.com/de/download/help/path.xml
+http://education.oracle.com/pls/web_prod-plq-dad/ou_product_category.getPage?p_cat_id=267&p_org_id=34&lang=D#tabs-3
+https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-809
+https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-808
+https://netbeans.org/downloads/
+http://www.oracle.com/technetwork/articles/javase/jdk-netbeans-jsp-142931.html
+https://www.eclipse.org/downloads/
+http://openbook.rheinwerk-verlag.de/javainsel/
+https://docs.oracle.com/javase/8/docs/api/index.html
+https://de.wikipedia.org/wiki/Unified_Modeling_Language
+https://projecteuler.net/

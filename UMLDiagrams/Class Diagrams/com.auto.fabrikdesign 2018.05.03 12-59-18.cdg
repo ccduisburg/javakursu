@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="com.auto.fabrikdesign">
+  <ClassDiagramComponents>
+    <Class name="AutoFabrik" package="com.auto.fabrikdesign" visibility="public" xPosition="430.0" yPosition="237.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="bringAuto" returnType="Auto" visibility="public" isStatic="true">
+          <Argument type="String" name="marke"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="BMW" package="com.auto.fabrikdesign" visibility="public" xPosition="217.0" yPosition="826.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMarken" returnType="String" visibility="public"/>
+        <Method name="getPreis" returnType="Double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ComAutoFabrikDesign" package="com.auto.fabrikdesign" visibility="public" xPosition="763.0" yPosition="237.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Mercedes" package="com.auto.fabrikdesign" visibility="public" xPosition="483.0" yPosition="816.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMarken" returnType="String" visibility="public"/>
+        <Method name="getPreis" returnType="Double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Renault" package="com.auto.fabrikdesign" visibility="public" xPosition="763.0" yPosition="816.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMarken" returnType="String" visibility="public"/>
+        <Method name="getPreis" returnType="Double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Auto" package="com.auto.fabrikdesign" visibility="public" xPosition="462.0" yPosition="489.0">
+      <Methods>
+        <Method name="getMarken" returnType="String" visibility="public"/>
+        <Method name="getPreis" returnType="Double" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.auto.fabrikdesign.Renault" target="com.auto.fabrikdesign.Auto"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.auto.fabrikdesign.BMW" target="com.auto.fabrikdesign.Auto"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="com.auto.fabrikdesign.Mercedes" target="com.auto.fabrikdesign.Auto"/>
+    <UseRelation source="com.auto.fabrikdesign.AutoFabrik" target="com.auto.fabrikdesign.Auto" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

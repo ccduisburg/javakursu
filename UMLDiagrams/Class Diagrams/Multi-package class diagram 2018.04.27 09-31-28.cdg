@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="nachhilfeDaoListImplt" package="nachhilfe_verwaltungs.Model" visibility="public" xPosition="271.0" yPosition="1529.0">
+      <Fields>
+        <Field name="student" type="List&lt;Student&gt;" visibility="private"/>
+        <Field name="lehre" type="List&lt;Lehre&gt;" visibility="private"/>
+        <Field name="kurs" type="List&lt;Kurs&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getAllKurs" returnType="List&lt;Kurs&gt;" visibility="public"/>
+        <Method name="getAllStudent" returnType="List&lt;Student&gt;" visibility="public"/>
+        <Method name="getAllLehre" returnType="List&lt;Lehre&gt;" visibility="public"/>
+        <Method name="addKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="updateKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="deleteKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="addLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="updateLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="deleteLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="addStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+        <Method name="updateStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+        <Method name="deleteStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="nachhilfe_verwaltungs.gui" visibility="public" xPosition="1576.0" yPosition="419.0">
+      <Fields>
+        <Field name="attribute" type="ArrayList&lt;String&gt;" visibility="public"/>
+        <Field name="ramen" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setRamen" returnType="void" visibility="public">
+          <Argument type="String" name="ramen"/>
+        </Method>
+        <Method name="getRamen" returnType="String" visibility="public"/>
+        <Method name="getAttribute" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+        <Method name="set" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;String&gt;" name="attribute"/>
+        </Method>
+        <Method name="drawmenu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MenuCall" package="nachhilfe_verwaltungs.gui" visibility="public" xPosition="22.0" yPosition="816.0">
+      <Fields>
+        <Field name="wahl" type="int" visibility="package"/>
+        <Field name="vs" type="VerwaltungsService" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="VerwaltungsService" name="vs"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="mainmenuCall" returnType="void" visibility="public">
+          <Argument type="int" name="wahl"/>
+        </Method>
+        <Method name="submenuCall" returnType="void" visibility="public">
+          <Argument type="int" name="wahl"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Navigation" package="nachhilfe_verwaltungs.gui" visibility="public" xPosition="283.0" yPosition="688.0">
+      <Fields>
+        <Field name="scan" type="Scanner" visibility="private"/>
+        <Field name="vs" type="VerwaltungsService" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="VerwaltungsService" name="vs"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="navigation" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FestangestelltePerson" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="2064.0" yPosition="635.0">
+      <Fields>
+        <Field name="anmeldeDatum" type="LocalDate" visibility="private"/>
+        <Field name="steuerNummer" type="String" visibility="private"/>
+        <Field name="stundenLohn" type="Double" visibility="private"/>
+        <Field name="arbeitszeitinWoche" type="double" visibility="private"/>
+        <Field name="gekundigt" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getAnmeldeDatum" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnmeldeDatum" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Method>
+        <Method name="getSteuerNummer" returnType="String" visibility="public"/>
+        <Method name="setSteuerNummer" returnType="void" visibility="public">
+          <Argument type="String" name="steuerNummer"/>
+        </Method>
+        <Method name="getStundenLohn" returnType="Double" visibility="public"/>
+        <Method name="setStundenLohn" returnType="void" visibility="public">
+          <Argument type="Double" name="stundenLohn"/>
+        </Method>
+        <Method name="getArbeitszeitinWoche" returnType="double" visibility="public"/>
+        <Method name="setArbeitszeitinWoche" returnType="void" visibility="public">
+          <Argument type="double" name="arbeitszeitinWoche"/>
+        </Method>
+        <Method name="getGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="setGekundigt" returnType="void" visibility="public">
+          <Argument type="boolean" name="gekundigt"/>
+        </Method>
+        <Method name="personAnmeldung" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Kurs" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="893.0" yPosition="350.0">
+      <Fields>
+        <Field name="kursId" type="int" visibility="private"/>
+        <Field name="kursName" type="String" visibility="private"/>
+        <Field name="gekundigt" type="boolean" visibility="private"/>
+        <Field name="anmeldeDatum" type="LocalDate" visibility="private"/>
+        <Field name="lehre" type="Lehre" visibility="private"/>
+        <Field name="alleStudenten" type="List&lt;Student&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="kursId"/>
+          <Argument type="String" name="kursName"/>
+          <Argument type="boolean" name="gekundigt"/>
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="kursName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="lehre"/>
+        </Method>
+        <Method name="anmeldung" returnType="void" visibility="public">
+          <Argument type="Student" name="student"/>
+        </Method>
+        <Method name="getKursId" returnType="int" visibility="public"/>
+        <Method name="setKursId" returnType="void" visibility="public">
+          <Argument type="int" name="kursId"/>
+        </Method>
+        <Method name="getKursName" returnType="String" visibility="public"/>
+        <Method name="setKursName" returnType="void" visibility="public">
+          <Argument type="String" name="kursName"/>
+        </Method>
+        <Method name="getGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="setGekundigt" returnType="void" visibility="public">
+          <Argument type="boolean" name="gekundigt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Lehre" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="905.0" yPosition="1895.0">
+      <Fields>
+        <Field name="beginDatum" type="Date" visibility="private"/>
+        <Field name="stLohn" type="double" visibility="private"/>
+        <Field name="gekundigt" type="boolean" visibility="private"/>
+        <Field name="anmeldeDatum" type="LocalDate" visibility="private"/>
+        <Field name="kurse" type="List&lt;Kurs&gt;" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="double" name="stLohn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setKurs" returnType="void" visibility="public">
+          <Argument type="List&lt;Kurs&gt;" name="kurse"/>
+        </Method>
+        <Method name="getKurs" returnType="List&lt;Kurs&gt;" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="personAnmeldung" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Method>
+        <Method name="getBeginDatum" returnType="Date" visibility="public"/>
+        <Method name="setBeginDatum" returnType="void" visibility="public">
+          <Argument type="Date" name="beginDatum"/>
+        </Method>
+        <Method name="getStLohn" returnType="double" visibility="public"/>
+        <Method name="setStLohn" returnType="void" visibility="public">
+          <Argument type="double" name="stLohn"/>
+        </Method>
+        <Method name="isGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="getGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="setGekundigt" returnType="void" visibility="public">
+          <Argument type="boolean" name="gekundigt"/>
+        </Method>
+        <Method name="KursKundigen" returnType="void" visibility="public">
+          <Argument type="Kurs" name="kurs"/>
+        </Method>
+        <Method name="showKurszumLehre" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Person" package="nachhilfe_verwaltungs.logic" visibility="public" isAbstract="true" xPosition="2400.0" yPosition="1715.0">
+      <Fields>
+        <Field name="name" type="String" visibility="protected"/>
+        <Field name="vorname" type="String" visibility="protected"/>
+        <Field name="adress" type="String" visibility="protected"/>
+        <Field name="email" type="String" visibility="protected"/>
+        <Field name="geburstort" type="String" visibility="protected"/>
+        <Field name="geburstdate" type="String" visibility="protected"/>
+        <Field name="geschlescht" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="vorname"/>
+          <Argument type="String" name="adress"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="geburstort"/>
+          <Argument type="String" name="Geburstdate"/>
+          <Argument type="String" name="geschlescht"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="vorname"/>
+          <Argument type="String" name="adress"/>
+          <Argument type="String" name="geschlescht"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="personAnmeldung" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="personName"/>
+        </Method>
+        <Method name="setVorname" returnType="void" visibility="public">
+          <Argument type="String" name="personVorname"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getVorname" returnType="String" visibility="public"/>
+        <Method name="getAdress" returnType="String" visibility="public"/>
+        <Method name="setAdress" returnType="void" visibility="public">
+          <Argument type="String" name="adress"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getGeburstort" returnType="String" visibility="public"/>
+        <Method name="setGeburstort" returnType="void" visibility="public">
+          <Argument type="String" name="geburstort"/>
+        </Method>
+        <Method name="getGeschlescht" returnType="String" visibility="public"/>
+        <Method name="setGeschlescht" returnType="void" visibility="public">
+          <Argument type="String" name="geschlescht"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Student" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="1602.0" yPosition="1668.0">
+      <Fields>
+        <Field name="anmeldeDatum" type="LocalDate" visibility="private"/>
+        <Field name="schulKlasse" type="String" visibility="private"/>
+        <Field name="schulName" type="String" visibility="private"/>
+        <Field name="gekundigt" type="boolean" visibility="private"/>
+        <Field name="kurse" type="List&lt;Kurs&gt;" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="vorname"/>
+          <Argument type="String" name="adress"/>
+          <Argument type="String" name="geschlescht"/>
+          <Argument type="String" name="schulName"/>
+          <Argument type="String" name="schulKlasse"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="schulName"/>
+          <Argument type="String" name="schulKlasse"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSchulKlasse" returnType="String" visibility="public"/>
+        <Method name="setSchulKlasse" returnType="void" visibility="public">
+          <Argument type="String" name="SchulKlasse"/>
+        </Method>
+        <Method name="getSchulName" returnType="String" visibility="public"/>
+        <Method name="setSchulName" returnType="void" visibility="public">
+          <Argument type="String" name="SchulName"/>
+        </Method>
+        <Method name="getGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="setGekundigt" returnType="void" visibility="public">
+          <Argument type="boolean" name="gekundigt"/>
+        </Method>
+        <Method name="personAnmeldung" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anmeldeDatum"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="addKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="kname"/>
+        </Method>
+        <Method name="setKurs" returnType="void" visibility="public">
+          <Argument type="List&lt;Kurs&gt;" name="kurse"/>
+        </Method>
+        <Method name="getKurs" returnType="List&lt;Kurs&gt;" visibility="public"/>
+        <Method name="KursKundigen" returnType="void" visibility="public">
+          <Argument type="Kurs" name="kurs"/>
+        </Method>
+        <Method name="showKursvonSchule" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VerwaltungsService" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="119.0" yPosition="1187.0">
+      <Fields>
+        <Field name="l1" type="List&lt;Lehre&gt;" visibility="package"/>
+        <Field name="s1" type="List&lt;Student&gt;" visibility="package"/>
+        <Field name="k1" type="List&lt;Kurs&gt;" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="neuLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="neuStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+        <Method name="neuKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Nachhilfe_Verwaltungs" package="nachhilfe_verwaltungs.verwaltung" visibility="public" xPosition="549.0" yPosition="220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="NachhilfeDao" package="nachhilfe_verwaltungs.Model" visibility="public" xPosition="1865.0" yPosition="1097.0">
+      <Methods>
+        <Method name="getAllKurs" returnType="List&lt;Kurs&gt;" visibility="public"/>
+        <Method name="addKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="updateKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="deleteKurs" returnType="void" visibility="public">
+          <Argument type="Kurs" name="k"/>
+        </Method>
+        <Method name="getAllLehre" returnType="List&lt;Lehre&gt;" visibility="public"/>
+        <Method name="addLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="updateLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="deleteLehre" returnType="void" visibility="public">
+          <Argument type="Lehre" name="l"/>
+        </Method>
+        <Method name="getAllStudent" returnType="List&lt;Student&gt;" visibility="public"/>
+        <Method name="addStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+        <Method name="updateStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+        <Method name="deleteStudent" returnType="void" visibility="public">
+          <Argument type="Student" name="s"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="Kundigen" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="1260.0" yPosition="1442.0">
+      <Methods>
+        <Method name="getGekundigt" returnType="boolean" visibility="public"/>
+        <Method name="setGekundigt" returnType="void" visibility="public">
+          <Argument type="boolean" name="p"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Enum name="KursEnum" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="391.0" yPosition="2080.0">
+      <Literals>
+        <Literal name="Mathe"/>
+        <Literal name="Deutsch"/>
+        <Literal name="English"/>
+        <Literal name="Turkish"/>
+      </Literals>
+    </Enum>
+    <Enum name="SchulTypeEnum" package="nachhilfe_verwaltungs.logic" visibility="public" xPosition="435.0" yPosition="421.0">
+      <Literals>
+        <Literal name="Gymnasium"/>
+        <Literal name="Gesamtschule"/>
+        <Literal name="Hauptschule"/>
+        <Literal name="Grundschule"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Kurs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Kurs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="student" source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Student" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Student&gt;"/>
+    <HasRelation name="k1" source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Kurs" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Kurs&gt;"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="l1" source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Lehre" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Lehre&gt;"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.Kurs" target="nachhilfe_verwaltungs.logic.Lehre" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.Model.NachhilfeDao"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="nachhilfe_verwaltungs.logic.Student" target="nachhilfe_verwaltungs.logic.Kundigen"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.NachhilfeDao" target="nachhilfe_verwaltungs.logic.Kurs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Lehre" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kurs" source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Kurs" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Kurs&gt;"/>
+    <HasRelation name="lehre" source="nachhilfe_verwaltungs.logic.Kurs" target="nachhilfe_verwaltungs.logic.Lehre" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.NachhilfeDao" target="nachhilfe_verwaltungs.logic.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kurse" source="nachhilfe_verwaltungs.logic.Lehre" target="nachhilfe_verwaltungs.logic.Kurs" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Kurs&gt;"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.Lehre" target="nachhilfe_verwaltungs.logic.Kurs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="nachhilfe_verwaltungs.logic.FestangestelltePerson" target="nachhilfe_verwaltungs.logic.Person"/>
+    <HasRelation name="vs" source="nachhilfe_verwaltungs.gui.MenuCall" target="nachhilfe_verwaltungs.logic.VerwaltungsService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.Student" target="nachhilfe_verwaltungs.logic.Kurs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="nachhilfe_verwaltungs.logic.Lehre" target="nachhilfe_verwaltungs.logic.Kundigen"/>
+    <IsRelation name="is" source="nachhilfe_verwaltungs.logic.Student" target="nachhilfe_verwaltungs.logic.Person"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.Kurs" target="nachhilfe_verwaltungs.logic.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="nachhilfe_verwaltungs.logic.FestangestelltePerson" target="nachhilfe_verwaltungs.logic.Kundigen"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Student" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="alleStudenten" source="nachhilfe_verwaltungs.logic.Kurs" target="nachhilfe_verwaltungs.logic.Student" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Student&gt;"/>
+    <HasRelation name="lehre" source="nachhilfe_verwaltungs.Model.nachhilfeDaoListImplt" target="nachhilfe_verwaltungs.logic.Lehre" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Lehre&gt;"/>
+    <UseRelation source="nachhilfe_verwaltungs.Model.NachhilfeDao" target="nachhilfe_verwaltungs.logic.Lehre" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vs" source="nachhilfe_verwaltungs.gui.Navigation" target="nachhilfe_verwaltungs.logic.VerwaltungsService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Lehre" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="kurse" source="nachhilfe_verwaltungs.logic.Student" target="nachhilfe_verwaltungs.logic.Kurs" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Kurs&gt;"/>
+    <IsRelation name="is" source="nachhilfe_verwaltungs.logic.Lehre" target="nachhilfe_verwaltungs.logic.Person"/>
+    <HasRelation name="s1" source="nachhilfe_verwaltungs.logic.VerwaltungsService" target="nachhilfe_verwaltungs.logic.Student" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Student&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

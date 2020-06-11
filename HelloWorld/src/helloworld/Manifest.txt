@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: cemil
+Class-Path: hallo.jar
+Main-Class: helloworld.HelloWorld
+
+
+
+
+
+
+

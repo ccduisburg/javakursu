@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="kartenspiel">
+  <ClassDiagramComponents>
+    <Class name="Fluss" package="kartenspiel" visibility="public" xPosition="279.0" yPosition="419.0">
+      <Fields>
+        <Field name="enten" type="JComponent[]" visibility="package"/>
+        <Field name="ueberschrift" type="JLabel" visibility="package"/>
+        <Field name="ausgabe" type="JLabel" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="bauen" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Gitter" package="kartenspiel" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="spalten" type="int" visibility="private"/>
+        <Field name="zeilen" type="int" visibility="private"/>
+        <Field name="felder" type="JComponent[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="bauen" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Grenzen" package="kartenspiel" visibility="public" xPosition="578.0" yPosition="275.0">
+      <Fields>
+        <Field name="oben" type="JButton" visibility="package"/>
+        <Field name="unten" type="JButton" visibility="package"/>
+        <Field name="rechts" type="JButton" visibility="package"/>
+        <Field name="links" type="JButton" visibility="package"/>
+        <Field name="mitte" type="JButton" visibility="package"/>
+        <Field name="schlingel" type="JButton" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="bauen" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Karten" package="kartenspiel" visibility="public" xPosition="713.0" yPosition="20.0">
+      <Fields>
+        <Field name="rot" type="JPanel" visibility="private"/>
+        <Field name="blau" type="JPanel" visibility="private"/>
+        <Field name="pink" type="JPanel" visibility="private"/>
+        <Field name="gelb" type="JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="zusammenstellen" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Kartenspiel" package="kartenspiel" visibility="public" xPosition="1025.0" yPosition="275.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Messung" package="kartenspiel" visibility="public" xPosition="879.0" yPosition="495.0">
+      <Fields>
+        <Field name="anzeige" type="JPanel" visibility="private"/>
+        <Field name="navigation" type="JPanel" visibility="private"/>
+        <Field name="vor" type="JButton" visibility="private"/>
+        <Field name="zurueck" type="JButton" visibility="private"/>
+        <Field name="anfang" type="JButton" visibility="private"/>
+        <Field name="ende" type="JButton" visibility="private"/>
+        <Field name="cards" type="CardLayout" visibility="private"/>
+        <Field name="schieber" type="JSlider[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="bauenNav" returnType="void" visibility="private"/>
+        <Method name="bauenAnzeige" returnType="void" visibility="private"/>
+        <Method name="bauen" returnType="void" visibility="private"/>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TopFenster" package="kartenspiel" visibility="public" xPosition="590.0" yPosition="552.0">
+      <Fields>
+        <Field name="leiste" type="JMenuBar" visibility="private"/>
+        <Field name="layout" type="JMenu" visibility="private"/>
+        <Field name="andererKram" type="JMenu" visibility="private"/>
+        <Field name="grid" type="JMenuItem" visibility="private"/>
+        <Field name="flow" type="JMenuItem" visibility="private"/>
+        <Field name="border" type="JMenuItem" visibility="private"/>
+        <Field name="karten" type="JTabbedPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="menuErstellen" returnType="void" visibility="private"/>
+        <Method name="bauen" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

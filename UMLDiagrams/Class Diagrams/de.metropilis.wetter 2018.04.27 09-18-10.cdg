@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="de.metropilis.wetter">
+  <ClassDiagramComponents>
+    <Class name="Nebel" package="de.metropilis.wetter" visibility="public" isAbstract="true" xPosition="265.0" yPosition="464.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Regenwolke" package="de.metropilis.wetter" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="starten" returnType="void" visibility="public"/>
+        <Method name="landen" returnType="void" visibility="public"/>
+        <Method name="dasIstDieGefahr" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Wolke" package="de.metropilis.wetter" visibility="public" isAbstract="true" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="hoehe" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="fliegen" returnType="void" visibility="public"/>
+        <Method name="setHoehe" returnType="void" visibility="public">
+          <Argument type="int" name="hoehe"/>
+        </Method>
+        <Method name="dasIstDieGefahr" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="de.metropilis.wetter.Nebel" target="de.metropilis.wetter.Wolke"/>
+    <IsRelation name="is" source="de.metropilis.wetter.Regenwolke" target="de.metropilis.wetter.Wolke"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
